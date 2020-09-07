@@ -1,0 +1,23 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Simple app using Postgres, Express, React, and Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SCD346/WebApp.git"
+  },
+  "author": "SteveCD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SCD346/WebApp/issues"
+  },
+  "homepage": "https://github.com/SCD346/WebApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.4"
+  }
+}
