@@ -34,12 +34,14 @@ const EditJob = ({ job }) => {
         <Fragment>
             <button 
             type="button" 
-            className="btn btn-warning" 
+            className="btn btn-light" 
             data-toggle="modal" 
             data-target={`#id${job.id}`}>
                 Edit
             </button>
 
+
+{/* EDIT MODAL START */}
             <div 
                 className="modal" 
                 id={`id${job.id}`}
@@ -72,11 +74,11 @@ const EditJob = ({ job }) => {
                     <div className="modal-footer">
                         <button 
                             type="button" 
-                            className="btn btn-warning" 
+                            className="btn btn-light" 
                             data-dismiss="modal"
                             onClick={e => updateDescription(e)}
                             >
-                            Edit
+                            Save
                         </button>
 
                         <button
@@ -85,7 +87,7 @@ const EditJob = ({ job }) => {
                             data-dismiss="modal"
                             onClick={() => setDescription(job.description)}
                         >
-                            Close
+                            Cancel
                         </button>
                         </div>
                     </div>

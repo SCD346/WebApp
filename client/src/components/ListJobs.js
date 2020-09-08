@@ -24,7 +24,6 @@ const ListJobs = () => {
 
 
     //GET JOBS FUNCTION
-
     const getJobs = async () => {
         try {
             const response = await fetch("http://localhost:8080/jobs");
@@ -74,7 +73,7 @@ const ListJobs = () => {
 
                         <td>
                             <button 
-                                className= "btn btn-danger"
+                                className= "btn btn-dark"
                                 onClick={() => deleteJob(job.id)}
                                 >
                                     Delete

@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const pool = require("./db")
+const pool = require("./db") //requiring the object created and exported in db.js
 
 //middleware
 app.use(cors());
@@ -14,6 +14,8 @@ app.use(express.json()); //enables sccess to'request.body' from the client side
 app.listen(8080, () => {
     console.log("server has started on port 8080")
 });
+
+
 
 //ROUTES --> POST,  GET(all),  GET(one),  PUT(update),  DELETE
 

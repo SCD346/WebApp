@@ -1,6 +1,7 @@
-const Pool = require("pg").Pool;
+const Pool = require("pg").Pool; //PG library enables connection to the database with server
 
 const pool = new Pool({
+    //Connection configuration: Uses the login information set up in PGAdmin when db: "postgres" was built
     "user": "read1Jobs",
     "password" : "password",
     "host" : "Stephens-MBP",
