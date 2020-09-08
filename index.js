@@ -19,7 +19,7 @@ app.listen(8080, () => {
 
 //ROUTES --> POST,  GET(all),  GET(one),  PUT(update),  DELETE
 
-//CREATE - POST
+//CREATE - POST, async request
 app.post("/jobs", async (req, res) => {
     try {
         const {title, description, company, id} = req.body;
