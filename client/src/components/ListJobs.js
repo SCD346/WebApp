@@ -5,8 +5,7 @@ import EditJob from "./EditJob";
 const ListJobs = () => {
     const [jobs, setJobs] = useState([]);
 
-    //DELETE JOB FUNCTION
-
+    //DELETE JOB FUNCTION lives inside the listjobs function
     const deleteJob = async id => {
         try {
             const deleteJob = await fetch(`http://localhost:8080/jobs/${id}`, {
@@ -19,6 +18,7 @@ const ListJobs = () => {
           console.error(error.message)
         }
     };
+    //END OF DELETE JOB FUNCTION
 
 
 
@@ -29,7 +29,6 @@ const ListJobs = () => {
         try {
             const response = await fetch("http://localhost:8080/jobs");
             const jsonData = await response.json();
-            
             //console.log(jsonData)
             setJobs(jsonData)
         } catch (err) {

@@ -1,3 +1,4 @@
+// Requiring necessary libraries
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -5,12 +6,18 @@ const pool = require("./db")
 
 //middleware
 app.use(cors());
-app.use(express.json()); //enables'request.body from the client side
+app.use(express.json()); //enables sccess to'request.body' from the client side
 
 
-//ROUTES//
+// WEB SERVER: port 8080
+    // Connects to the Postgresql DB on port 5432 (can access the db via PG Admin on port 5000)
+app.listen(8080, () => {
+    console.log("server has started on port 8080")
+});
 
-//create
+//ROUTES --> POST,  GET(all),  GET(one),  PUT(update),  DELETE
+
+//CREATE - POST
 app.post("/jobs", async (req, res) => {
     try {
         const {title, description, company, id} = req.body;
@@ -79,6 +86,3 @@ app.delete("/jobs/:id", async (req, res) => {
     }
 });
 
-app.listen(8080, () => {
-    console.log("server has started on port 8080")
-});
