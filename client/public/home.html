@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+        <!-- Added custome FAVICON (tab icon) -->
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- OVERRIDE STYLING CSS --> <link rel="stylesheet" href="style.css">
+
+    <title>JobBored.com!</title>
+  </head>
+
+<!-- BOOTSTRAP NAVBAR BEGIN -->
+<!-- <nav class="navbar navbar-light" style="background-color: #28a744;"> -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #208136;">
+        <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Employers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Job Seekers</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<!-- BOOTSTRAP NAVBAR BEGIN -->
+
+<img id="main_logo" src="JobBored_Logo.png" alt="JobBored.com logo">
+
+<div class="main">
+    <aside id="jobaside">
+        <div class="job-search">
+            <form action="">
+            <input id="job-search1" type="text" placeholder="Job title or keyword" name="job-search">
+            <button type="submit" id="job-search-button">Search</button>
+            </form>
+        </div>
+        <ul>
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Full Stack Developer</label><br>
+            
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Front-end Engineer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Software Engineer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Junior Dev</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Sr. Full-stack Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Software Develper</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">React Develper</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Mongo DB Engineer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Product Manager</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Full Stack Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Software Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Front-end Dev</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Software Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Front-end Engineer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Software Engineer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Junior Dev</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Developer</label><br>
+
+            <input type="checkbox" id="job-title" name="job-title" value="Product Manager">
+            <label for="job-title">Software Engineer</label><br>
+        </ul>
+    </aside> 
+
+    <div class="puzzle">
+
+        <div id="get-started-window">
+            <p id="request-to-user">Let us help you find your next job!</p>
+
+            <form action="">
+                <input id="home_entry" type="text" placeholder="Job title or keyword" name="job-search">
+                <input id="home_entry" type="text" placeholder="San Fransisco, CA" name="job-search">
+                <button type="submit" id="job-search-button">Get Started</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+  <body>
+
+
+<!-- START REACT DEFAULT STUFF -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous">
+    </script>
+<!-- START REACT DEFAULT STUFF -->
+  </body>
+</html>

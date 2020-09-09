@@ -1,0 +1,82 @@
+#jobaside {
+    margin-top: 25px;
+    height: 700px;
+    width: 350px;
+    /* border: 1px red solid; */
+}
+
+ .job-search{
+    margin-bottom: 10px;
+    /* border: 1px solid blue; */
+    padding: 5px;
+ }
+
+#main_logo {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 25%;
+    height: 25%;
+    /* border: 2px solid orange; */
+ }
+
+ .main{
+    display: flex;
+    /* border: 3px solid fuchsia; */
+
+  }
+
+
+
+  .puzzle {
+    margin-left: 15vh;
+    border: 1px solid #208136;
+    width: 145vh;
+    background-image: url('jobbored.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+  }
+
+    /* BEGIN: ASIDE STYLING */
+    /* #titles-list{
+        font-size: large;
+        border: 2px solid black;
+        width: 30vh;
+      } */
+      
+     
+      /* #job-search-button {
+          height: 2.5vh;
+          width: 7vh;
+          text-align: center;
+      } */
+          /* END: ASIDE STYLING */
+
+
+          #get-started-window{
+            margin: auto;
+            margin-top: 250px;;
+            width: 22%;
+            height: 28%;
+            border: 3px solid green;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: #208136;
+            text-align: center;
+        }
+
+        #home_entry {
+            margin-bottom: 10px;
+        }
+        
+        .log-in {
+            /* border: 1px black solid; */
+            display: flex;
+            }
+        
+        .survey-form {
+            /* border: 1px yellowgreen solid; */
+        }
+
+ 
