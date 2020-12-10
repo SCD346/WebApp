@@ -9,6 +9,11 @@ app.use(cors());
 app.use(express.json()); //enables sccess to'request.body' from the client side
 
 
+// PORT CHANGE, ask heroku to locate an available port.
+//const PORT = process.env.PORT || 8080;
+
+//
+
 // WEB SERVER: port 8080
     // Connects to the Postgresql DB on port 5432 (can access the db via PG Admin on port 5000)
 app.listen(8080, () => {
