@@ -3,21 +3,32 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db") //requiring the object created and exported in db.js
+const path = require("path");
+const PORT = process.env.PORT || 8080;
+
+
+//HEROKU LAUNCH PREP
+// process.env.PORT
+// process.env.NODE_ENV => production or undefined
+
+
 
 //middleware
 app.use(cors());
 app.use(express.json()); //enables sccess to'request.body' from the client side
 
+if (process.env.NODE_ENV === "production") {
+    //serve static content
+    //npm run build
+    app.use(express.static(path.join(__dirname, "client/build")));
+}
 
-// PORT CHANGE, ask heroku to locate an available port.
-//const PORT = process.env.PORT || 8080;
 
-//
 
 // WEB SERVER: port 8080
     // Connects to the Postgresql DB on port 5432 (can access the db via PG Admin on port 5000)
-app.listen(8080, () => {
-    console.log("server has started on port 8080")
+app.listen(PORT, () => {
+    console.log("server has started on port ${PORT}")
 });
 
 

@@ -8,7 +8,7 @@ const ListJobs = () => {
     //DELETE JOB FUNCTION lives inside the listjobs function
     const deleteJob = async id => {
         try {
-            const deleteJob = await fetch(`http://localhost:8080/jobs/${id}`, {
+            const deleteJob = await fetch(`/jobs/${id}`, {
             method: "DELETE"
         });
 
@@ -26,7 +26,7 @@ const ListJobs = () => {
     //GET JOBS FUNCTION
     const getJobs = async () => {
         try {
-            const response = await fetch("http://localhost:8080/jobs");
+            const response = await fetch("/jobs");
             const jsonData = await response.json();
             //console.log(jsonData)
             setJobs(jsonData)

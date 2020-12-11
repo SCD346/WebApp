@@ -13,7 +13,7 @@ const EditJob = ({ job }) => {
         try {
             const body = {description};
             const response = await fetch (
-                `http://localhost:8080/jobs/${job.id}`,
+                `/jobs/${job.id}`,
             {
             method: "PUT",
             headers: {"content-type": "application/json" },
