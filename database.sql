@@ -1,4 +1,4 @@
-CREATE DATABASE postgres;
+-- CREATE DATABASE postgres;
 
 CREATE TABLE jobs(
   id SERIAL PRIMARY KEY,
